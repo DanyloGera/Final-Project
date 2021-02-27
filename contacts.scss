@@ -1,0 +1,245 @@
+/*style*/
+@font-face {
+	font-family: 'BalsamiqSans-Bold';
+	font-display: swap;
+	src: url("style/Balsamiq_Sans/BalsamiqSans-Bold.ttf");
+	src: local("O"), url("style/Balsamiq_Sans/BalsamiqSans-Bold.ttf") format("truetype"), 
+			url("style/Balsamiq_Sans/BalsamiqSans-Bold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RocknRoll_One';
+	font-display: swap;
+	src: url("style/RocknRoll_One/RocknRollOne-Regular.ttf");
+	src: local("O"), url("style/RocknRoll_One/RocknRollOne-Regular.ttf") format("truetype"), 
+			url("style/RocknRoll_One/RocknRollOne-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Comfortaa';
+	font-display: swap;
+	src: url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+	src: local("O"), url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype"), 
+			url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Caveat';
+	font-display: swap;
+	src: url("style/Caveat/Caveat-VariableFont_wght.ttf");
+	src: local("O"), url("style/Caveat/Caveat-VariableFont_wght.ttf") format("truetype"), 
+			url("style/Caveat/Caveat-VariableFont_wght.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Cinzel';
+	font-display: swap;
+	src: url("style/Cinzel/Cinzel-VariableFont_wght.ttf");
+	src: local("O"), url("style/Cinzel/Cinzel-VariableFont_wght.ttf") format("truetype"), 
+			url("style/Cinzel/Cinzel-VariableFont_wght.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.menu{
+	background-color: #F39C12;
+	position: fixed;
+	width: 1519px;
+	.logo_for_menu{
+		width: 100px;
+		margin-left: 200px;
+	}
+	ul	{
+		list-style-type: none;
+		font-family: 'Comfortaa';
+		display: flex;
+		font-size: 20px;
+		margin-left: 250px;
+		margin-top: -70px;
+		padding-bottom: 20px;
+		li{
+			margin-left: 50px;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+	}
+	select{
+		color: white;
+		background-color: #F39C12;
+		border: none;
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		width: 100px;
+		border-radius: 20px;
+		font-size: 20px;
+		padding: 5px 5px 6px 10px;
+		font-family: 'Comfortaa', cursive;
+		margin-top: -20px;
+		:focus{
+			outline: none;
+			border: none;
+		}
+/* question */
+		/*option{
+			.ukraine{
+			}
+			.rassia{}
+			.usa{}
+			.france{}
+			.China{}
+		}*/
+	}
+}
+header{
+	.look{
+		font-size: 20px;
+		margin-left: 1000px;
+		margin-top: -200px;
+	}
+	.foto_and_video{
+		img{
+			margin-top: 150px;
+			margin-left: 150px;
+		}
+		video{
+			width: 204px;
+			height: 500px;
+			margin-left: -347px;
+		}
+	}
+	.block_for_youtube{
+		background-color: #FFDFDC;
+		margin-left: 200px;
+		width: 1140px;
+		height: 300px;
+		margin-top: -300px;
+		.sucscrib{
+			font-family: "BalsamiqSans-Bold";  
+			font-size: 50px;
+			margin-left: 450px;
+			padding-top: 30px;
+			a{
+				color: black;
+				text-decoration: none;
+			}
+		}
+		.YouTube{
+			font-family: "RocknRoll_One";
+			margin-left: 650px;
+			font-size: 45px;
+			margin-top: 20px;
+			a{
+				color: black;
+				text-decoration: none;
+			}
+		}
+		.nouvell{
+			font-family: "BalsamiqSans-Bold";  
+			font-size: 30px;
+			margin-left: 500px;
+			margin-top: 30px;
+			a{
+				color: black;
+				text-decoration: none;
+			}
+		}
+		.observer{
+			margin-left: 800px;
+			margin-top: 20px;
+			font-size: 30px;
+			font-family: "Caveat";
+		}
+	}
+}
+
+
+/*main*/
+main{
+	.instagram{
+		background-color: #E9F5EF;
+		margin-top: 150px;
+		height:900px;
+		p{
+			font-size: 50px;
+			padding-top: 50px;
+			margin-left: 170px;
+			font-family: "Cinzel";
+			width: 300px;
+			a{
+				color: black;
+			   text-decoration: none;
+			}
+		}
+		button{
+			background-color: #FFC5D6;
+			border: none;
+			font-size: 40px;
+			padding:0px 15px 0px 10px;
+			font-family: 'Caveat';
+			margin-left: 1100px;
+			height: 30px;
+			margin-top: -50px;
+			position: absolute;
+			a{
+				text-decoration: none;
+				color: black;
+			}
+		}
+		.block_for_foto{
+			.бабушка_1{
+				width: 280px;
+				margin-left: 170px;
+				margin-top: 50px;
+				margin-right: -5px;
+				margin-bottom: -5px;
+			}
+			.бабушка_2{
+				width: 285px;
+				margin-right: -10px;
+				margin-bottom: -5px;
+			}
+			.бабушка_3{
+				width: 320px;
+				height: 283px;
+				margin-bottom: -5px;
+			}
+			.бабушка_4{
+					width: 280px;
+					height: 282px;
+					margin-left: -10px;
+					margin-bottom: -5px;
+			}
+/*второй абзац*/		
+			.бабушка_5{
+					height: 280px;
+					width: 280px;
+					margin-left: 170px;;
+			}
+			.бабушка_6{
+					width: 285px;
+					height: 280px;
+					margin-left: -5px;
+			}
+			.бабушка_7{
+				width: 310px;
+				height: 280px;
+				margin-left: -5px;
+			}
+			.бабушка_8{
+				width: 280px;
+				height: 280px;
+				margin-left: -5px;
+			}
+		}
+	}
+}
