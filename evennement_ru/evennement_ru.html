@@ -7,34 +7,40 @@
   <link rel="stylesheet" type="text/css" href="evennement.css">
 </head>
 <body>
-  <div class="menu">
-    <a href="#"><img src="foto/logo/logo.png" class="logo_for_menu"></a>
-    <ul>
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">О нас</a></li>
-      <li><a href="#">ЧаВо</a></li>
-      <li><a href="#">Галерея</a></li>
-      <li><a href="contacts_ru.html">Контакты</a></li>
-      <li><a href="#">События</a></li>
-      <li>
+    <div class="menu">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+    <div class="content">
+     <div class="logo"><a href="#"><img class="logph" src="foto/logo/Logo.png"></a></div>
+        <ul class="links">
+          <li class="hover"><a href="#">Главная</a></li>
+          <li class="hover"><a href="#">О нас</a></li>
+          <li class="hover"><a href="#">ЧаВо</a></li>
+          <li class="hover"><a href="#">Галерея</a></li>
+          <li class="hover"><a href="#">Контакты</a></li>
+          <li class="hover"><a href="#">События</a></li>
 <!--выпадающий список-->
-      <div class="btn-group">
-        <button>
-          Языки
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="#">Украинский</a></li>
-          <li><a href="#">Русский</a></li>
-          <li><a href="#">Английский</a></li>
-          <li><a href="#">Французский</a></li>
-          <li><a href="#">Китайский</a></li>
+          <li>
+            <a href="#" class="desktop-link">Языки</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Українська</a></li>
+              <li><a href="#">Русский</a></li>
+              <li><a href="#">English</a></li>
+              <li><a href="#">Français</a></li>
+              <li><a href="#">中國人</a></li>
+            </ul>
+          </li>
+<!--fini выпадающий список-->
         </ul>
       </div>
-<!--fini выпадающий список-->
-      </li>
-    </ul>
+    </nav>
   </div>
-
+  
   <header>
       <div class="start">
         <p><strong>События</strong></p>
@@ -63,7 +69,7 @@
 
   <div class="four_block">
     <div class="four_1"></div>
-    <a href=""></a><img src="foto/evenement/photo_6.png"></a>
+    <a href=""><img src="foto/evenement/photo_6.png"></a>
     <a href=""><p class="p1">Приичины стать</p><p class="p2">Великим волантером</a></p>
   </div>
 </main>
@@ -88,10 +94,10 @@
         <ul>
           <li><a href="https://www.liqpay.ua/ru/checkout/card/i9215574650">Поддерживать Проект Единоразово</a></li>
           <li><a href="https://www.liqpay.ua/ru/checkout/card/i9215574650">Поддерживать Проект Ежемесячно</a></li>
-          <li><a href="https://www.liqpay.ua/ru/checkout/card/checkout_1614785710317579_25999827_ulBLvXEP18fmGAPB3L9O">Ежемесячно</a></li>
-          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1614789926388289_27504595_ELuy3csixHjQaW0bdJnW">Продукты для стареньких единоразово</a></li>
-          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1614789939402548_27898498_9vFQUfl1BT1BQE985Fcj">Продукты для стареньких ежемесячно</a></li>
-          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1614785779453560_16405666_hcCWtKg8dfcJCsHTWC3F">Средство гигиены</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615640264876280_101898659_46AoC204jpYZdan5he2p">Помогать Ежемесячно</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615640115134966_103027107_JQXiehGFVYQkYlGzhOkc">Продукты для стареньких единоразово</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615640129544951_106440338_STTbjwcZByPMgtB7ekWN">Продукты для стареньких ежемесячно</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615639751461470_122359379_OfH8pqtLRS3jd86piA4b">Средство гигиены</a></li>
           <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScAZ0onNui_KC1iSFcEhxrI2ab4CGLouW9S7wab5WzkmRqS3A/viewform">Волонтерство</a></li>
         </ul>
       </div>
@@ -108,7 +114,7 @@
          </div>
 
       <div class="block_for_adress">
-        <p class="adress">Украина, Киев, ул. Мельникова, 12</p>
+        <p class="adress"><a href="">Украина, Киев, ул. Мельникова, 12</a></p>
         <p class="amail"><a href="mailto:help@starenki.com.ua">help@starenki.com.ua</a></p>
 
         <div class="block_with_img_link">
@@ -116,10 +122,10 @@
           <a href="https://www.facebook.com/starenki/"><img src="foto/end/facebook.png" class="facebook"></a>
           <a href="https://t.me/starenki"><img src="foto/end/telega.png" class="telega"></a>
 
-               <div class="gmail_youtube">
+              <div class="gmail_youtube">
                 <a href="mailto:help@starenki.com.ua"><img src="foto/end/gmail.png" class="gmail"></a>
-             <a href="https://www.youtube.com/channel/UCWxv5fXOMh0UQlPbz18bEXA"><img src="foto/end/youtube.png" class="youtube"></a>
-               </div>
+                <a href="https://www.youtube.com/channel/UCWxv5fXOMh0UQlPbz18bEXA"><img src="foto/end/youtube.png" class="youtube"></a>
+              </div>
         </div>
 
         <div class="block_with_img">
