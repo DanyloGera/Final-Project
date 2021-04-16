@@ -157,6 +157,8 @@ nav .content .links{
   display: flex;
   justify-content: space-around;
   align-img:center;
+
+
 }
 .page{
 display:flex;
@@ -164,11 +166,11 @@ justify-content:space-around;
 text-decoration:none;
 color:#000;
 font-size:35px;
-
 }
 .page:hover{
 color:#F39C12;
 }
+
 
 
 
