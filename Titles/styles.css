@@ -1,0 +1,52 @@
+body {
+
+	width: 700px;
+	margin: 30px auto;
+	 overflow: hidden;
+   background-color: #140a01;
+}
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.3;
+color: #fff;
+  text-align: center;
+  font-family: 'Limelight', cursive;
+}
+h2, h3, h4{
+  text-align: center;
+  color: #fff;
+  font-family: 'Limelight', cursive;
+}
+h4{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.wrapper {
+	display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+.content{
+
+}
+a {
+	color: #fff;
+  margin: auto;
+}
+button{
+border-radius: 30px;
+background-color: #FEC75E;
+padding: 20px;
+border: 2px solid #000;
+margin: 50px;
+font-size: 30px;
+}
+header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
