@@ -219,6 +219,13 @@
    }
  }
 
+ img{ 
+   width: 150px;
+   height:150px;
+ }
+ .thre{ 
+   text-align: center;
+ }
 
   
 /*footer start*/
