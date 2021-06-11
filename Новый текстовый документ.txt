@@ -1,0 +1,25 @@
+<div class="block2">
+<img src="photo/old1.jpg">
+<img src="photo/old2.jpg">
+<img src="photo/old3.jpg">
+<img src="photo/old4.jpg">
+<img src="photo/old5.jpg">
+<img src="photo/old6.jpg">
+<img src="photo/old7.jpg">
+<img src="photo/old8.jpg">
+<img src="photo/old9.jpg">
+<img src="photo/old10.jpg">
+</div>
+<div class="block1/1">
+  <p class="trhee">
+Ста
+  </p>
+  <img src="photo/old11.jpg">
+  <p class="trh">
+ рич   
+  </p>
+  <img src="photo/old12.jpg">
+  <p class="trhe">
+    ки
+  </p>
+</div>
