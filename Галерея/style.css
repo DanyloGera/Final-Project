@@ -1,98 +1,100 @@
 @font-face {
-    font-family: 'Comfortaa';
-    font-display: swap;
-    src: url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf");
-    src: local("O"), url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype"), 
-        url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  
-  *{
-    margin: 0;
-    padding: 0;
-  }
-  .menu{
-    background: #F39C12;
-    position: fixed;
-    width: 100%;
-  }
-  .menu a{
-    text-decoration: none;
-  }
-  .menu nav{
-    position: relative;
-    display: flex;
-    margin: 0 auto;
-    height: 70px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  nav .content{
-    display: flex;
-  }
-  nav .content .links{
-    margin-left: 80px;
-    display: flex;
-  }
-  .logph{
-      width: 70px;
-      height: 50px;
-      margin-left: 350px;
-      margin-top: 10px;
-  }
-  .content .links li{
-    list-style: none;
-    line-height: 70px;
-  }
-  .content .links li a,
-  .content .links li label{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 9px 17px;
-    border-radius: 5px;
-    font-family: "Comfortaa";
-    transition: all 0.3s ease;
-  }
-  .content .links li label{
-    display: none;
-  }
-  .content .links .hover:hover{
-      text-decoration: line-through;
-      transition: 10s ease-in-out;
-  }
-  .menu .menu-icon{
-    display: none;
-  }
-  .menu input[type="checkbox"]{
-    display: none;
-  }
-  .content .links ul{
-    position: absolute;
-    background: #f39c12;
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-  }
-  .content .links li:hover > ul{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-  }
-  .content .links ul li a{
-    display: block;
-    width: 100%;
-    line-height: 30px;
-    border-radius: 0px !important;
-  }
-  .content .links ul li a:hover{
+  font-family: 'Comfortaa';
+  font-display: swap;
+  src: url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+  src: local("O"), url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype"), 
+      url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  background: #F39C12;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.menu a{
+  text-decoration: none;
+}
+.menu nav{
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.logph{
+    width: 70px;
+    height: 50px;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  font-family: "Comfortaa";
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links .hover:hover a{
     color: rgb(233, 30, 99);
+    transition: 1.5s ease-in-out;
     background-color: white;
-  }
-  
+}
+.menu .menu-icon{
+  display: none;
+}
+.menu input[type="checkbox"]{
+  display: none;
+}
+.content .links ul{
+  position: absolute;
+  background: #f39c12;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px !important;
+}
+.content .links ul li a:hover{
+  color: rgb(233, 30, 99);
+  background-color: white;
+}
+
   .text1{ 
     padding-bottom: 35px;
     padding-top: 35px;
@@ -159,7 +161,9 @@
 .hidden {
   opacity:0;
   
+
 }
+
 .console-container {
   
   font-family:Khula;
@@ -191,27 +195,18 @@
   margin-bottom: 100px;
   transition: 0.3s;
 }
-
 .gal1{ 
-  margin-left: 285px;
-  margin-top: 250px;
-  margin-right: -500px;
-  height:150px;
-  width:150px;
-  margin-bottom:-100px;
+  width: 250px;
+  height: 250px;
 }
-.gal2{
-  border-radius: 50%;
-  margin-left: 30%;
+.gal2{  
+  width: 250px;
+  height: 250px;
+}
+.gal3{  width: 250px;
+  height: 250px;
 }
 
-.gal3{ 
-margin-right: 50px;
-margin-top: 300px;
-height: 150px;
-width: 150px;
-margin-bottom: 100px;
-}
 .img1{ 
   width:150px;
   height:150px;
@@ -344,12 +339,41 @@ header h2 {
 }
 
   /*footer start*/
+  @font-face {
+    font-family: 'Open_Sans';
+    font-display: swap;
+    src: url("style/Open_Sans/OpenSans-Light.ttf");
+    src: local("O"), url("style/Open_Sans/OpenSans-Light.ttf") format("truetype"), 
+        url("style/Open_Sans/OpenSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    font-display: swap;
+    src: url("style/Raleway/static/Raleway-Light.ttf");
+    src: local("O"), url("style/Raleway/static/Raleway-Light.ttf") format("truetype"), 
+        url("style/Raleway/static/Raleway-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Poiret_One';
+    font-display: swap;
+    src: url("style/Poiret_One/PoiretOne-Regular.ttf");
+    src: local("O"), url("style/Poiret_One/PoiretOne-Regular.ttf") format("truetype"), 
+        url("style/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /*footer start*/
   footer {
     background-color: #282323;
     height: 500px;
     margin-top: 470px;
     position: absolute;
-    width: 1700px;
+    width: 1688px;
   }
   footer .block_img img {
     margin-left: 40px;
@@ -425,7 +449,6 @@ header h2 {
     margin-top: -320px;
   }
   footer .text .block_for_adress .adress a {
-    text-decoration: none;
     color: white;
     transition: margin-left 1s;
   }
@@ -443,6 +466,7 @@ header h2 {
   footer .text .block_for_adress .amail a {
     text-decoration: none;
     transition: margin-left 1s;
+    color: white;
   }
   footer .text .block_for_adress .amail a:hover {
     color: #ff8c00;
@@ -531,7 +555,7 @@ header h2 {
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
     border-top: 160px solid #282323;
-    margin-left: 1560px;
+    margin-left: 1548.4px;
     margin-top: 270px;
   }
   footer .line_2 {
@@ -585,13 +609,17 @@ header h2 {
     height: 50px;
     margin-top: -55px;
   }
-  footer .arrow {
+  footer .back-to-top-btn{
     position: absolute;
     z-index: 0;
+    border: none;
   }
-  footer .arrow img {
+  footer .back-to-top-btn:focus{
+    border: none;
+  }
+  footer .back-to-top-btn img {
     margin-top: -150px;
     height: 80px;
     position: absolute;
-    margin-left: 1600px;
+    margin-left: 1590px;
   }
