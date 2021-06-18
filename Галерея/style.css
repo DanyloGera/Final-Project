@@ -274,9 +274,7 @@ header h2 {
   opacity: 1;
 }
 
-.scrolled.fade-in {
-  animation: fade-in 1s ease-in-out both;
-}
+
 
 .scrolled.fade-in-bottom {
   animation: fade-in-bottom 1s ease-in-out both;
@@ -366,7 +364,12 @@ header h2 {
     font-weight: normal;
     font-style: normal;
   }
-  
+  .scrolled.fade-in {
+    animation: fade-in 1s ease-in-out both;
+  }
+  .block3{ 
+    text-align: center;
+  } 
   /*footer start*/
   footer {
     background-color: #282323;
