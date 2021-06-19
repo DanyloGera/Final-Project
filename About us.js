@@ -21,11 +21,11 @@ document.addEventListener("mousemove", parallax);
  }
 function myFunction() {
   var change = document.getElementById("toggle");
-  if (change.innerHTML == "Ранго:'тут ничего нет'"){
-    change.innerHTML = "Ранго:'найди навык!'";
+  if (change.innerHTML == "Rango: 'il n'y a rien ici'"){
+    change.innerHTML = "Rango:'trouver skill !'";
   }
   else {
-    change.innerHTML = "Ранго:'тут ничего нет'";
+    change.innerHTML = "Rango: 'il n'y a rien ici'";
   }
 }
 
