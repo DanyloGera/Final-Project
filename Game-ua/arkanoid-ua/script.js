@@ -14,10 +14,11 @@ var playing = false;
 var startButton;
 
 function preload() {
-	// handleRemoteImagesOnJSFiddle();
-    // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    // game.scale.pageAlignHorizontally = true;
-    // game.scale.pageAlignVertically = true;
+  game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
+  game.scale.setMinMax(700, 500, 900, 700);
+game.scale.pageAlignHorizontally = true;
+game.scale.pageAlignVertically = true;
+
     game.stage.backgroundColor = '#CEDCE2';
     game.load.image('paddle', 'img/paddle.png');
     game.load.image('brick', 'img/brick.png');
@@ -105,7 +106,7 @@ function ballHitBrick(ball, brick) {
     scoreText.setText('Бонус: '+score);
     if(score === brickInfo.count.row*brickInfo.count.col*10) {
         alert('Вітання! Ваш рахунок: + ' + score);
-        window.location.href="https://danylogera.github.io/game-5ua/";
+        window.location.href="../game-5ua/index.html";
     }
 }
 function ballLeaveScreen() {
@@ -117,7 +118,7 @@ function ballLeaveScreen() {
         paddle.reset(game.world.width*0.5, game.world.height-10);
         game.input.onDown.addOnce(function(){
             lifeLostText.visible = false;
-            ball.body.velocity.set(300, -300);
+            ball.body.velocity.set(400, -400);
         }, this);
     }
     else {
@@ -131,12 +132,6 @@ function ballHitPaddle(ball, paddle) {
 }
 function startGame() {
     startButton.destroy();
-    ball.body.velocity.set(300, -300);
+    ball.body.velocity.set(400, -400);
     playing = true;
 }
-
-// this function (needed only on JSFiddle) take care of loading the images from the remote server
-// function handleRemoteImagesOnJSFiddle() {
-// 	game.load.baseURL = 'https://end3r.github.io/Gamedev-Phaser-Content-Kit/demos/';
-// 	game.load.crossOrigin = 'anonymous';
-// }

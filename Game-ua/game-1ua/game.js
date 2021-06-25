@@ -112,14 +112,18 @@ window.onload = function () {
 
   // before the game begins
   function preload() {
+    game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
+    game.scale.setMinMax(700, 500, 900, 700);
+ game.scale.pageAlignHorizontally = true;
+ game.scale.pageAlignVertically = true;
     // game.stage.backgroundColor = '#5db1ad';
-    game.load.image('background', 'background.png');
+    game.load.image('background', './img/background.png');
 
     //Load images
-    game.load.image('platform1', 'platform1.png');
-    game.load.image('platform2', 'platform2.png');
-    game.load.image('platform3', 'platform3.png');
-    game.load.image('platform4', 'platform4.png');
+    game.load.image('platform1', './img/platform1.png');
+    game.load.image('platform2', './img/platform2.png');
+    game.load.image('platform3', './img/platform3.png');
+    game.load.image('platform4', './img/platform4.png');
 
 
     //Load spritesheets
