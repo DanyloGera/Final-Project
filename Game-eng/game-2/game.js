@@ -17,31 +17,31 @@ function addItems() {
   items = game.add.physicsGroup();
   createItem(575, 400, 'fish');
   createItem(365, 400, 'fruits');
-  createItem(225, 500, 'milk');
-  createItem(295, 500, 'water');
-  createItem(365, 500, 'nofastfood');
-  createItem(435, 500, 'meat');
-  createItem(505, 500, 'vagetables');
-  createItem(575, 500, 'nodrinking');
+  createItem(220, 500, 'milk');
+  createItem(280, 500, 'water');
+  createItem(355, 500, 'nofastfood');
+  createItem(445, 500, 'meat');
+  createItem(500, 500, 'vagetables');
+  createItem(565, 500, 'nodrinking');
 
   createItem(200, 132, 'nosmoke');
 
   createItem(200, 310, 'nocovid');
 
-  createItem(200, 240, 'cards');
-  createItem(270, 310, 'clothes');
-  createItem(340, 310, 'dryer');
-  createItem(410, 310, 'gadget');
-  createItem(480, 310, 'money');
-  createItem(550, 310, 'new');
+  createItem(200, 240, 'lime');
+  createItem(270, 310, 'grape');
+  createItem(340, 310, 'avokado');
+  createItem(410, 310, 'strawber');
+  createItem(480, 310, 'pear');
+  createItem(550, 310, 'plum');
 
-  createItem(400, 120, 'new');
-  createItem(470, 120, 'dryer');
-  createItem(540, 120, 'clothes');
+  createItem(400, 120, 'plum');
+  createItem(470, 120, 'avokado');
+  createItem(530, 120, 'grape');
   createItem(610, 120, 'nocovid');
-  createItem(610, 70, 'gadget');
-  createItem(680, 120, 'money');
-  createItem(750, 120, 'cards');
+  createItem(610, 70, 'strawber');
+  createItem(690, 120, 'pear');
+  createItem(750, 120, 'lime');
 
 }
 
@@ -96,17 +96,17 @@ function itemHandler(player, item) {
      currentScore = currentScore + 10;
   }else if (item.key === 'milk') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'cards') {
+  }else if (item.key === 'lime') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'clothes') {
+  }else if (item.key === 'grape') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'dryer') {
+  }else if (item.key === 'avokado') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'gadget') {
+  }else if (item.key === 'strawber') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'money') {
+  }else if (item.key === 'pear') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'new') {
+  }else if (item.key === 'plum') {
      currentScore = currentScore + 10;
   }else if (item.key === 'nosmoke') {
     alert("You picked up a harmful product!");
@@ -145,6 +145,10 @@ window.onload = function () {
 
   // before the game begins
   function preload() {
+    game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
+    game.scale.setMinMax(700, 500, 900, 700);
+    game.scale.pageAlignHorizontally = true;
+    game.scale.pageAlignVertically = true;
     // game.stage.backgroundColor = '#5db1ad';
     game.load.image('background', 'background.png');
 
@@ -170,12 +174,12 @@ window.onload = function () {
     game.load.spritesheet('water', 'food/water.png', 36, 44);
     game.load.spritesheet('milk', 'food/milk.png', 36, 44);
 
-    game.load.spritesheet('cards', 'gadgets/cards.png', 36, 44);
-    game.load.spritesheet('clothes', 'gadgets/clothes.png', 36, 44);
-    game.load.spritesheet('dryer', 'gadgets/dryer.png', 36, 44);
-    game.load.spritesheet('gadget', 'gadgets/gadget.png', 36, 44);
-    game.load.spritesheet('money', 'gadgets/money.png', 36, 44);
-    game.load.spritesheet('new', 'gadgets/new.png', 36, 44);
+    game.load.spritesheet('lime', 'gadgets/lime.png', 36, 44);
+    game.load.spritesheet('grape', 'gadgets/grape.png', 36, 44);
+    game.load.spritesheet('avokado', 'gadgets/avokado.png', 36, 44);
+    game.load.spritesheet('strawber', 'gadgets/strawber.png', 36, 44);
+    game.load.spritesheet('pear', 'gadgets/pear.png', 36, 44);
+    game.load.spritesheet('plum', 'gadgets/plum.png', 36, 44);
     game.load.spritesheet('nocovid', 'gadgets/nocovid.png', 36, 44);
 
 

@@ -3,52 +3,73 @@ background-image: linear-gradient(to bottom, #87cdc5, #73c8c9, #5ec2cd, #48bcd3,
 }
 
 canvas {
-   margin: auto;
+
    box-shadow: 0 0  20px 10px #023F6B;
 
    /* border-radius: 10px; */
  }
+ @media (min-height: 800px) {
+    .btn-back {
+     max-height: 70%;
+   }
+
+ }
+ .row1{
+   display: flex;
+ justify-content: flex-start;
+
+ }
+.row1-wrap{
+   position: absolute;
+     height: 95%;
+   width: 20%;
+ }
+ .btn-back {
+   background-color: #FEC75E;
+       padding: 20px;
+       border: 2px solid #000;
+       border-radius: 10px;
+       font-family: 'DotGothic16', sans-serif;
+       font-size: 10pt;
+       width: 80%;
+       height: 100%;
+ }
  .btn-back-wrapper {
-  display: flex;
-  justify-content: flex-start;
-}
-.btn-back {
-  position: absolute;
-  top: 50px;
-  background-color: #FEC75E;
-  padding: 20px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  font-family: 'DotGothic16', sans-serif;
-  font-size: 15px;
-}
+   display: flex;
+   justify-content: center;
+   height: 12%;
+   width: 100%;
+   position: absolute;
+   top: 20%;
+ }
 .container {
   display: flex;
   justify-content: center;
 }
 .callout {
   position: fixed;
-    width: 50%;
-position: absolute;
-top: 10px;
-    z-index: 5;
+  width: 60%;
+  max-width: 800px;
+  /* position: absolute; */
+  top: 2%;
+  z-index: 5;
 }
 
 .callout-header {
-  padding: 25px 15px;
+  padding: 25px 0;
   background: #555;
-  font-size: 40px;
+  font-size: 27pt;
   color: white;
   text-align: center
 }
 
 .callout-container {
-  padding: 30px 40px 40px 40px;
+  padding: 40px 40px 40px 40px;
   background-color: #ccc;
   color: black;
   text-align: center;
   text-align: justify;
-  font-size: 29pt;
+  font-size: 26pt;
 }
 
 .closebtn1 {
@@ -66,12 +87,13 @@ top: 10px;
 
 .alert {
   position: absolute;
-  top: 200px;
-  padding: 20px;
-  width: 10%;
-  background-color: #eee;
-  color: #000;
-  border: 3px dashed #4F7072;
+    top: 40%;
+      padding: 20px;
+      font-size: 15pt;
+      max-width: 100%;
+      background-color: #eee;
+      color: #000;
+      border: 3px dashed #4F7072;;
 }
 
 .closebtn {
