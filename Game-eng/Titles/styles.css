@@ -1,10 +1,10 @@
 body{
 background-color: #140a01;
-overflow: hidden;
+
 }
 .body {
 
-	width: 700px;
+	width: 70%;
 	margin: 30px auto;
 
 
@@ -18,27 +18,28 @@ position: fixed;
 	position: fixed;
   top: 8%;
   right: 5%;
-	width: 90px;
-	height: 132px;
+	width: 100px;
+	height:  100px;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 26pt;
   font-weight: normal;
   line-height: 1.3;
-color: #fff;
+  color: #fff;
   text-align: center;
   font-family: 'Limelight', cursive;
+	margin: 0;
 }
-h2, h3, h4{
+h2{
   text-align: center;
   color: #fff;
   font-family: 'Limelight', cursive;
+	line-height: 1.5;
+	font-size: 20pt;
+	margin: 20px;
 }
-h4{
-    font-size: 20px;
-    line-height: 1.5;
-}
+
 
 .wrapper {
 	display: flex;
@@ -54,6 +55,9 @@ a {
 	color: #fff;
   margin: auto;
 }
+.link{
+	color: #fff;
+}
 button{
 border-radius: 30px;
 background-color: #FEC75E;
@@ -66,4 +70,45 @@ header{
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+ul{
+margin: 0;
+	text-align: justify;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+
+   }
+	 .insta{
+		 	list-style-image: url(insta.png);
+	 }
+	 .site{
+		 	list-style-image: url(site.png);
+	 }
+
+	 .facebook{
+		 list-style-image: url(facebook.png);
+	 }
+.smm{
+	font-size: 20pt;
+}
+.media{
+	display: flex;
+	justify-content: center;
+}
+footer{
+display: flex;
+justify-content: center;
+}
+p,a{
+		color: #9e9e9e;
+
+}
+.autor{
+
+	width: 25%;
+	color: #eee;
+background-image: linear-gradient(to bottom, #000203, #0e0f10, #171818, #1f1f1f, #272727);
+
+
 }

@@ -93,35 +93,35 @@ if (i == 0) {
       var pattern = ctx.createPattern(headImg, 'repeat');
       ctx.fillStyle = pattern;
     } else
-if (i == 7) {
+if (i == 1) {
       var pattern1 = ctx.createPattern(sImg, 'repeat');
       ctx.fillStyle = pattern1;
 } else
- if (i == 8) {
+ if (i == 2) {
      var pattern2 = ctx.createPattern(tImg, 'repeat');
      ctx.fillStyle = pattern2;
 } else
-if (i == 9) {
+if (i == 3) {
     var pattern3 = ctx.createPattern(aImg, 'repeat');
     ctx.fillStyle = pattern3;
 } else
-if (i == 10) {
+if (i == 4) {
     var pattern4 = ctx.createPattern(rImg, 'repeat');
     ctx.fillStyle = pattern4;
 } else
-if (i == 11) {
+if (i == 5) {
     var pattern5 = ctx.createPattern(eImg, 'repeat');
     ctx.fillStyle = pattern5;
 } else
-if (i == 12) {
+if (i == 6) {
     var pattern6 = ctx.createPattern(nImg, 'repeat');
     ctx.fillStyle = pattern6;
 } else
-if (i == 13) {
+if (i == 7) {
     var pattern7 = ctx.createPattern(kImg, 'repeat');
     ctx.fillStyle = pattern7;
 } else
-if (i == 14) {
+if (i == 8) {
     var pattern8 = ctx.createPattern(iImg, 'repeat');
     ctx.fillStyle = pattern8;
 } else {
@@ -151,7 +151,7 @@ if (i == 14) {
     snake.pop();
 
   }
-  if (score === 20) {
+  if (score === 10) {
     clearInterval(game,alert("Your score: " + score),pasword());
 function pasword() {
   var btn = document.getElementById('form');
@@ -185,7 +185,7 @@ function pasword() {
   snake.unshift(newHead);
 }
 
-let game = setInterval(drawGame, 100);
+let game = setInterval(drawGame, 195);
 
 
 //timer
@@ -201,18 +201,24 @@ let game = setInterval(drawGame, 100);
 //pasword
   var truePasword1 = "STARENKI";
   var truePasword2 = "Starenki";
+  var truePasword3 = "starenki";
   function checkPassword()
   {
       if(document.getElementById("pasword-field").value == truePasword1)
       {
         alert('Correct! Your score: + ' + 20);
-        window.location.href="https://danylogera.github.io/game-3/";
+        window.location.href="../game-3/index.html";
       }
       else
       if(document.getElementById("pasword-field").value == truePasword2)
       {
         alert('Correct! Your score: + ' + 20);
-        window.location.href="https://danylogera.github.io/game-3/";
+        window.location.href="../game-3/index.html";
+      }else
+      if(document.getElementById("pasword-field").value == truePasword3)
+      {
+        alert('Correct! Your score: + ' + 20);
+        window.location.href="../game-3/index.html";
       }else
       {
         alert("Uncorrect!If you want to play again close the article '×'");

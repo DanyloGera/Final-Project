@@ -8,24 +8,43 @@
 	<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
+	<!-- row 1 -->
+	<div class="row1">
+	  <div class="row1-wrap">
 	<!--  -->
 	<div class="btn-back-wrapper">
-          <button type="button" class="btn-back">&#8619; Back to the site</button>
+          <button type="button" class="btn-back" onClick='location.href="https://starenki.com.ua/"'>&#8619; Back to the site</button>
         </div>
+				<!--control message  -->
+				<div class="alert">
+				  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+				  <strong>Controls!</strong> <p>Use arrow keys on the keyboard
+				<p>⟵↑↓⟶</p>	.
+				</p>
+				</div>
+				<!--timer  -->
+								<div class="timer-wrapper">
+				            <input class="timer" id="timer" type="text" name="" value="" disabled value="00:00">
+				        </div>
+							 </div>
+							 </div>
 
 
 
-				<!--  -->
+				<!--task message  -->
 
 				<div class="container">
         <div class="callout">
-          <div class="callout-header">Email Collector </div>
+          <div class="callout-header">The Postman</div>
             <span class="closebtn1" onclick="this.parentElement.style.display='none';">×</span>
               <div class="callout-container">
                   <p>
-                  The "old" computer is considered unnecessary in the storage,
-									but it contains a lot of important information and documents
-									that help maintain the order of the archive. Collect emails and find a password which will help you move to the next level.
+										Elderly people are used to writing and receiving hand-written letters.
+									  Collect all the letters to bring some good news to them!
+										STARENKI are building up the community of volunteers to bring more good
+										 news to our old ladies and gentlemen. Subscribe to our Facebook and Instagram
+										 to join the good doers!
 
                   </p>
             </div>
@@ -40,7 +59,7 @@
 							<div id="wrapper" >
 						<a rel="tooltip" align = "center" class="btn-success\" href="#"></a>
 						<form>
-							<label for="pasword">The best organization needs<br> <b>CAPITAL LETTERS </b></label>
+							<label for="pasword">Enter the password shown on the snake.</label>
 						<input name="pasword" id="pasword-field"  type="text" required placeholder="Enter the password" />
 						<input onclick="checkPassword()" type="button" class="btn-next" value="Next level &#8620;"/>
 						</form>
@@ -48,19 +67,13 @@
 					</div>
 			</div>
 		</div>
-<!--  -->
-<div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-  <strong>Controls!</strong> <p>Use the arrow keys on the keyboard
-<p>⟵↑↓⟶</p>	.
-</p>
+
+<div class="canvas-wrapper">
+	<!-- field -->
+		<canvas id="game" width="608" height="608"></canvas>
+
 </div>
-<!--  -->
-				<div class="timer-wrapper">
-            <input class="timer" id="timer" type="text" name="" value="" disabled value="00:00">
-        </div>
-<!--  -->
-	<canvas id="game" width="608" height="608"></canvas>
+
 
 	<script src="./script.js"></script>
 </body>
