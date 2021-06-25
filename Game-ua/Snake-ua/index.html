@@ -8,24 +8,44 @@
 	<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
+	<!-- row 1 -->
+	<div class="row1">
+		<div class="row1-wrap">
 	<!--  -->
 	<div class="btn-back-wrapper">
           <button type="button" class="btn-back">&#8619; Повернутись на сайт</button>
         </div>
+				<!-- control -->
+				<div class="alert">
+				  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+				  <strong>Controls!</strong> <p>Використовуйте клавіші стрілки на клавіатурі
+				<p>⟵↑↓⟶</p>	.
+				</p>
+				</div>
+				<!-- timer -->
+								<div class="timer-wrapper">
+				            <input class="timer" id="timer" type="text" name="" value="" disabled value="00:00">
+				        </div>
+							</div>
+						</div>
 
 
 
-				<!--  -->
+				<!--message  -->
 
 				<div class="container">
         <div class="callout">
-          <div class="callout-header"> Комп'ютерний змій </div>
+          <div class="callout-header"> Листоноша </div>
             <span class="closebtn1" onclick="this.parentElement.style.display='none';">×</span>
               <div class="callout-container">
                   <p>
-                    "Давній" комп'ютер вважають непотрібним на складі, проте в ньому багато важливої
-										 інформації, яка допомагає підтримувати порадок архіву.
-										Зберіть електронні листи та знайдіть пароль який допоможе вам перейти на наступний рівень.
+										Люди літнього віку звикли писати і отримувати листи.
+										Збери всі листи аби віднести їх до стареньких та порадувати гарними новинами!
+										STARENKI створюють комьюніті волонтерів, які допомагають літнім людям і приносять
+										їм хороші новини. Підписуйся на наш Фейсбук та Інстаграм та приєднуйся до тих,
+										хто робить добрі справи.
+
 
                   </p>
             </div>
@@ -40,7 +60,7 @@
 							<div id="wrapper" >
 						<a rel="tooltip" align = "center" class="btn-success\" href="#"></a>
 						<form>
-							<label for="pasword">Найдобріша організація потребує<br> <b>ВЕЛИКИХ ЛІТЕР</b></label>
+							<label for="pasword">Введіть пароль зображений на змійці.</label>
 						<input name="pasword" id="pasword-field"  type="text" required placeholder="Введіть пароль" />
 						<input onclick="checkPassword()" type="button" class="btn-next" value="Наступний рівень &#8620;"/>
 						</form>
@@ -48,19 +68,12 @@
 					</div>
 			</div>
 		</div>
-<!--  -->
-<div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-  <strong>Controls!</strong> <p>Використовуйте клавіші стрілки на клавіатурі
-<p>⟵↑↓⟶</p>	.
-</p>
-</div>
-<!--  -->
-				<div class="timer-wrapper">
-            <input class="timer" id="timer" type="text" name="" value="" disabled value="00:00">
-        </div>
-<!--  -->
-	<canvas id="game" width="608" height="608"></canvas>
+
+		<div class="canvas-wrapper">
+			<!-- field -->
+				<canvas id="game" width="608" height="608"></canvas>
+
+		</div>
 
 	<script src="./script.js"></script>
 </body>

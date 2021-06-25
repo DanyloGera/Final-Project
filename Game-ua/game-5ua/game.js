@@ -9,8 +9,8 @@ var jumpButton;
 var text;
 var winningMessage;
 var won = false;
-var currentScore = 250;
-var winningScore = 400;
+var currentScore = 440;
+var winningScore = 590;
 
 // add collectable items to the game
 function addItems() {
@@ -27,7 +27,7 @@ function SecondHallItems() {
   items = game.add.physicsGroup();
 // second hall items
   createItem(325, 134, 'letter-red');
-  createItem(435, 291, 'letter-red');
+  createItem(445, 291, 'letter-red');
   createItem(300, 233, 'letter-red');
   createItem(461, 174, 'letter-blue');
   createItem(366, 331, 'letter-blue');
@@ -52,11 +52,11 @@ function ThirdHallItems() {
 function addLastItems() {
   items = game.add.physicsGroup();
   // third hall items
-  createItem(680, 447, 'letter-red');
+  createItem(685, 447, 'letter-red');
   createItem(548, 363, 'letter-red');
-  createItem(680, 278, 'letter-red');
+  createItem(685, 278, 'letter-red');
   createItem(548, 220, 'letter-red');
-  createItem(668, 135, 'letter-red');
+  createItem(685, 135, 'letter-red');
   createItem(548, 84, 'letter-red');
 
 }
@@ -112,18 +112,14 @@ function createBadge() {
   badge.animations.play('spin', 10, true);
 }
 
-//create star
-// function addStar() {
-//   items = game.add.physicsGroup();
-//   createItem(571, 530, 'star');
-// }
+
 
 //check score
 function Check() {
   if (currentScore === winningScore) {
 addLastItems();
   } else {
-alert("Ви зібрали не всі  листи!");
+alert("You have not collected all the letters!");
 window.location.reload(true);
   }
 }
@@ -135,7 +131,7 @@ function itemHandler(player, item) {
      currentScore = currentScore + 10;
   }else if (item.key === 'letter-blue') {
      currentScore = currentScore + 10;
-  }else if (item.key === 'letter-red') {
+  }else  if (item.key === 'letter-red') {
      alert("Шкідливий вплив недостовірної інформації");
      window.location.reload(true);
   }else if (item.key === 'letter2') {
@@ -170,6 +166,10 @@ window.onload = function () {
 
   // before the game begins
   function preload() {
+    game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
+    game.scale.setMinMax(700, 500, 900, 700);
+    game.scale.pageAlignHorizontally = true;
+    game.scale.pageAlignVertically = true;
 
     game.load.image('background', 'background.png');
 
@@ -190,12 +190,12 @@ window.onload = function () {
     game.load.spritesheet('player', 'chalkers.png',  48, 62 );
 
 
-    game.load.spritesheet('letter1', 'blue.png', 36, 44);
-    game.load.spritesheet('letter2', 'blue.png', 36, 44);
-    game.load.spritesheet('letter3', 'blue.png', 36, 44);
-    game.load.spritesheet('letter4', 'blue.png', 36, 44);
-    game.load.spritesheet('letter-blue', 'blue.png', 36, 44);
-    game.load.spritesheet('letter-red', 'red.png', 36, 44);
+    game.load.spritesheet('letter1', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter2', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter3', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter4', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter-blue', 'cookie.png', 36, 44);
+    game.load.spritesheet('letter-red', 'chips.png', 36, 44);
 
 
     game.load.spritesheet('badge', 'badge.png', 42, 54);

@@ -2,46 +2,79 @@ html {
 background-image: linear-gradient(to left bottom, #8fcbca, #88c3c9, #83bac7, #80b2c3, #7ea9bf, #7ba9bf, #77aabe, #74aabd, #70b3bd, #73bbb9, #7dc3b1, #8ec9a8);
  }
 canvas {
-  display: block;
-  margin: 0 auto;
-}
-/*  */
-.btn-back {
   position: absolute;
-  top: 50px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 2;
+
+}
+.row1{
+  display: flex;
+justify-content: flex-start;
+
+}
+.row1-wrap{
+  position: absolute;
+    height: 95%;
+  width: 20%;
+}
+.btn-back {
   background-color: #FEC75E;
-  padding: 20px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  font-family: 'DotGothic16', sans-serif;
-  font-size: 15px;
+      padding: 20px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      font-family: 'DotGothic16', sans-serif;
+      font-size: 10pt;
+      max-width: 90%;
+      height: 100%;
 }
 .btn-back-wrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  height: 12%;
+  width: 100%;
+  position: absolute;
+  top: 1%
 }
 /* time */
 .timer-wrapper {
   position: absolute;
-top: 500px;
-}
-.timer {
-  width: 150px;
-  background-color: #FEC75E;
-  padding: 20px;
-  border: 2px solid #000;
-  border-radius: 10px;
-    text-align: center;
+top: 90%;
+display: flex;
+justify-content: center;
+
+width: 100%;
+position: absolute;
 }
 
+.timer {
+  background-color: #FEC75E;
+      padding: 20px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      font-family: 'DotGothic16', sans-serif;
+      font-size: 10pt;
+      max-width: 90%;
+      height: 100%;
+      text-align: center;
+}
+
+.canvas-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .alert {
   position: absolute;
-  top: 200px;
-  padding: 20px;
-  width: 15%;
-  background-color: #eee;
-  color: #000;
-  border: 3px dashed #4F7072;
+    top: 30%;
+      padding: 20px;
+      font-size: 15pt;
+      min-height: 30%;
+      background-color: #eee;
+      color: #000;
+      border: 3px dashed #4F7072;
+      z-index: 8;
 }
 
 .closebtn {
@@ -69,27 +102,32 @@ p{
   display: flex;
   justify-content: center;
 
+
 }
 .callout {
   position: fixed;
-    width: 50%;
+      width: 55%;
+      top: 2%;
+    max-width: 800px;
+    z-index: 10;
+
 }
 
 .callout-header {
-  padding: 25px 15px;
+  padding: 25px 0;
   background: #555;
-  font-size: 40px;
+  font-size: 26pt;
   color: white;
   text-align: center;
 }
 
 .callout-container {
-  padding: 5px 70px 5px 70px;
+  padding: 10px 60px 30px 60px;
   background-color: #ccc;
   color: black;
   text-align: center;
   text-align: justify;
-  font-size: 30pt;
+  font-size: 25pt;
 }
 
 .closebtn1 {
@@ -110,6 +148,7 @@ p{
   position: fixed;
     width: 50%;
     top: 25%;
+    z-index: 10;
 }
 .form-callout-container {
   padding: 20px 50px 55px 50px;
