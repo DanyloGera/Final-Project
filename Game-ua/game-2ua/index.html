@@ -12,117 +12,131 @@
         <script src="phaser.js"></script>
         <script src="game.js"></script>
 
+<!-- message  -->
   <div class="container">
     <div class="callout">
       <div class="callout-header">Майстер покупок</div>
         <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
           <div class="callout-container">
               <p>
-            Зберіть продукти для доставки пенсіонерам. Вибирайте лише корисні, уникаючи тих,
-            які можуть зашкодити
+            Зберіть продукти для доставки пенсіонерам. Вибирайте лише корисні, уникаючи тих, які можуть зашкодити
            <img class="img-sign" src="nosign.png" alt="знак заборони">.
-            Зібравши, пройдіть до виходу. Учасники проекту надають матеріальну допомогу пенсіонерам.
-            Волонтери купують і доставляють продукти до будинків щасливої старості або безпосередньо тим,
-            хто цього потребує.</p>
+           Зібравши, пройдіть до виходу.
+           STARENKI фандрейзять кошти, а потім закуповують продукти та силами волонтерів
+            разом із соцслужбою доставляють продуктові набори бабусям та дідусям додому.
+             Завжди потрібна допомога із фасуванням та доставкою наборів!
+             </p>
         </div>
     </div>
   </div>
 
+  <!-- row 1 -->
+  <div class="row1">
+    <div class="row1-wrap">
         <div class="btn-back-wrapper">
-          <button type="button"  class="btn-back">&#8619; Повернутись на сайт</button>
+          <button type="button"  class="btn-back" onClick='location.href="https://starenki.com.ua/"'>&#8619; Повернутись на сайт</button>
         </div>
 
+        <!--info ads column 1 -->
+        <div class="info-wrap1">
+              <div class="column-wrap1">
+                <div class="tooltip">
+                <img class="layout" src="./adInfo/ad-strawber.png" alt="">
+
+                </div>
+                <div class="tooltip">
+                <img class="layout" src="./adInfo/ad-lime.png" alt="">
+
+              </div>
+              <div class="tooltip">
+                <img class="layout" src="./adInfo/ad-avocado.png" alt="">
+
+              </div>
+              <div class="tooltip">
+                <img class="layout" src="./adInfo/ad-water.png" alt="">
+
+              </div>
+              </div>
+
+              <div class="column-wrap1">
+                <div class="tooltip">
+                <img class="layout" src="./adInfo/ad-fruits.png" alt="">
+
+              </div>
+                <div class="tooltip">
+                <img class="layout" src="./adInfo/ad-milk.png" alt="">
+
+              </div>
+                <div class="tooltip">
+                <img class="layout" src="./adInfo/ad-meat.png" alt="">
+
+              </div>
+                <div class="tooltip">
+                <img class="layout" src="./adInfo/ad-pear.png" alt="">
+
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+            <!-- row 2 -->
+<div class="row2">
+<div class="row2-wrap">
         <div class="btn-next-wrapper">
-          <button type="button" disabled id="btn-next" class="btn-next" onClick='location.href="https://danylogera.github.io/arkanoid-ua/"'>Наступний рівень &#8620;</button>
+          <button type="button" disabled id="btn-next" class="btn-next" onClick='location.href="../arkanoid-ua/index.html"'>Наступний рівень &#8620;</button>
+        </div>
+    <!-- info ads column 2 -->
+      <div class="info-wrap">
 
 
+            <div class="column-wrap">
+            <div class="tooltip">
+              <img class="layout" src="./adInfo/ad-grape.png" alt="">
 
-                  </div>
-                  <div class="info-wrap1">
+            </div>
+            <div class="tooltip">
+              <img class="layout" src="./adInfo/ad-fish.png" alt="">
 
-                        <div class="column-wrap1">
-                          <div class="tooltip">
-                          <img class="layout" src="./adInfo/ad-gadget.png" alt="">
-                            <span class="tooltiptext">Не відставаймо від сучасності!Учіться користуватись гаджетами.</span>
-                          </div>
-                          <div class="tooltip">
-                          <img class="layout" src="./adInfo/ad-cards.png" alt="">
-                          <span class="tooltiptext">Сучасні системи керування фінансами можуть Вам допомогти.</span>
-                        </div>
-                        <div class="tooltip">
-                          <img class="layout" src="./adInfo/ad-dryer.png" alt="">
-                          <span class="tooltiptext">Побутова техніка теж удосконалюється і ніколи не зайва.</span>
-                        </div>
-                        <div class="tooltip">
-                          <img class="layout" src="./adInfo/ad-water.png" alt="">
-                          <span class="tooltiptext">Необхідно пити багато води для здорового функціонування організму.</span>
-                        </div>
-                        </div>
+            </div>
+            <div class="tooltip">
+              <img class="layout" src="./adInfo/ad-nodrinking.png" alt="">
 
-                        <div class="column-wrap1">
-                          <div class="tooltip">
-                          <img class="layout" src="./adInfo/ad-fruits.png" alt="">
-                          <span class="tooltiptext">Фрукти містять важливі вітаміни.</span>
-                        </div>
-                          <div class="tooltip">
-                          <img class="layout" src="./adInfo/ad-milk.png" alt="">
-                          <span class="tooltiptext">Молочні продукти містять корисні білки, бактерії та вітаміни.</span>
-                        </div>
-                          <div class="tooltip">
-                          <img class="layout" src="./adInfo/ad-meat.png" alt="">
-                          <span class="tooltiptext">М'ясо містить необхідні білки й клітковину.</span>
-                        </div>
-                          <div class="tooltip">
-                          <img class="layout" src="./adInfo/ad-money.png" alt="">
-                          <span class="tooltiptext">Робота в будь-якому віці - робота.Працюйте в задоволення.</span>
-                        </div>
-                      </div>
-                      </div>
-                        <div class="info-wrap">
+            </div>
+            <div class="tooltip">
+              <img class="layout" src="./adInfo/ad-nofastfood.png" alt="">
 
-                              <div class="column-wrap">
-                              <div class="tooltip">
-                                <img class="layout" src="./adInfo/ad-clothes.png" alt="">
-                                <span class="tooltiptext">Мода змінюється. Не відставайте!</span>
-                              </div>
-                              <div class="tooltip">
-                                <img class="layout" src="./adInfo/ad-fish.png" alt="">
-                                <span class="tooltiptext">Риба місить корисні мінеральні речовини.</span>
-                              </div>
-                              <div class="tooltip">
-                                <img class="layout" src="./adInfo/ad-nodrinking.png" alt="">
-                                <span class="tooltiptext">Вживання алкоголю в будь-якій кількості підвищує ризик захворювань.</span>
-                              </div>
-                              <div class="tooltip">
-                                <img class="layout" src="./adInfo/ad-nofastfood.png" alt="">
-                                <span class="tooltiptext">Жирна їжа шкодить Вашому здоров'ю.</span>
-                              </div>
+            </div>
 
-                              </div>
+            </div>
 
-                              <div class="column-wrap">
-                                <div class="tooltip">
-                                <img class="layout" src="./adInfo/ad-new.png" alt="">
-                                <span class="tooltiptext">Шопінг завжди приносить радість. Ні в чому не відмовляйте.</span>
-                              </div>
-                                <div class="tooltip">
-                                <img class="layout" src="./adInfo/ad-vagetables.png" alt="">
-                                <span class="tooltiptext">Овочі важлива частина здорового раціону.</span>
-                              </div>
-                                <div class="tooltip">
-                                <img class="layout" src="./adInfo/ad-nosmoke.png" alt="">
-                                <span class="tooltiptext">Куріння приносить хвороби й вкорочує життя.</span>
-                              </div>
-                                <div class="tooltip">
-                                <img class="layout" src="./adInfo/ad-nocovid.png" alt="">
-                                <span class="tooltiptext">Дотримуйтесь норм санітарії. Беріжіть себе!</span>
-                              </div>
+            <div class="column-wrap">
+              <div class="tooltip">
+              <img class="layout" src="./adInfo/ad-plum.png" alt="">
 
-                              </div>
-                          </div>
-                            <div class="timer-wrapper">
-                        <input class="timer" id="timer" type="text" name="" value="" disabled value="00:00">
-                          </div>
+            </div>
+              <div class="tooltip">
+              <img class="layout" src="./adInfo/ad-vagetables.png" alt="">
 
+            </div>
+              <div class="tooltip">
+              <img class="layout" src="./adInfo/ad-nosmoke.png" alt="">
+
+            </div>
+              <div class="tooltip">
+              <img class="layout" src="./adInfo/ad-nocovid.png" alt="">
+
+            </div>
+
+            </div>
+        </div>
+
+        <!-- timer -->
+          <div class="timer-wrapper">
+      <input class="timer" id="timer" type="text" name="" value="" disabled value="00:00">
+        </div>
+    </div>
+  </div>
     </body>
 </html>
