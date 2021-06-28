@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+	  <div class="menu">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+    <div class="content">
+     <div class="logo"><a href="#"><img class="logph" src="foto/logo/Logo.png"></a></div>
+        <ul class="links">
+          <li class="hover"><a href="#">Principal</a></li>
+          <li class="hover"><a href="#">À propos de nous</a></li>
+          <li class="hover"><a href="#">Galerie</a></li>
+          <li class="hover"><a href="#">Contacts</a></li>
+          <li class="hover"><a href="#">Événements</a></li>
+          <li class="hover"><a href="#">Jeu</a></li>
+<!--выпадающий список-->
+          <li>
+            <a href="#" class="desktop-link">Langues</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Українська</a></li>
+              <li><a href="#">Русский</a></li>
+              <li><a href="#">English</a></li>
+              <li><a href="#">Français</a></li>
+              <li><a href="#">中國人</a></li>
+            </ul>
+          </li>
+<!--fini выпадающий список-->
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+	<p class="text_1">Bonjour Joueur. Comme tout "gratuit" personne, vos parents respectés et adorés vous ont donné 2 options: soit vous souffrirez  avec un livre sur l'agriculture ou vous en souffrirez ... :)))</p>
+	<p class="text_2">Nous savons tous bien ce que vous avez choisi. Et ce choix affectera l'issue d'événements ultérieurs. Voyons d'où vous venez. Vous déciderez !</p>
+	<p class="text_3">Avant de commencer votre voyage dans le vaste monde de l'inconnu, vous réussirez le test. Il faut casser cette foutue porte pour sortir en l'air  liberté totale, il existe un code à quatre chiffres.</p>
+	<p class="text_4">Utilisez le pouvoir de la déduction pour déchiffrer le mot de passe *****, il situé sur n'importe quelle page du site, pour cela vous pouvez remercier les développeurs</p>
+	<p class="text_5">pour les spéciaux, il y a des conseils ci-dessous</p>
+	<p class="text_6">Compétences d'archimage : #création</p>
+	<p class="text_7">cheater666_programist</p>
+	<p class="text_8">Fedorenko A.</p>
+	<p class="text_9">Sokolovsky D.</p>
+	<p class="text_10">Compétence de l'Empereur : #Progrès de jeu</p>
+	<p class="text_11">@gera_376</p>
+</header>
+
+
+<div class="calculator">
+	   <div class="header">
+		     <input type="text" placeholder="0,00" class="accont">
+		     <input type="text" placeholder="0,00" class="result">
+	   </div>
+
+	   <main>
+	      <button onclick="input('%')" class="btn">%</button>
+		   <button onclick="reset()" class="btn">C</button>
+			<button onclick="backspace()"  class="btn clean">
+				<img src="foto/img/backspace.png" class="backspace">
+				<img src="foto/img/back2.png" height="25px" class="bak">
+			</button>
+			<button onclick="input('/')" class="btn color">/</button>
+			<button onclick="input('7')" class="btn">7</button>
+			<button onclick="input('8')" class="btn">8</button>
+			<button onclick="input('9')" class="btn">9</button>
+			<button onclick="input('*')" class="btn color">x</button>
+			<button onclick="input('4')" class="btn">4</button>
+			<button onclick="input('5')" class="btn">5</button>
+			<button onclick="input('6')" class="btn">6</button>
+			<button onclick="input('-')" class="btn color" onclick="minus()">-</button>
+			<button onclick="input('1')" class="btn">1</button>
+			<button onclick="input('2')" class="btn">2</button>
+			<button onclick="input('3')" class="btn">3</button>
+			<button onclick="input('+')" class="btn color">+</button>
+			<button onclick="input('.')" class="btn">.</button>
+			<button onclick="input('0')" class="btn">0</button>
+			<button onclick="result()" class="btn-result" onclick="result">=</button>
+		</main>
+
+	   <div class="footer"></div>
+   </div>
+
+
+
+
+
+
+
+
+<div class="hints">
+	<div class="first_hints">
+		<p class="start">1 - indice</p>
+		<div class="p_0">
+			<p class="p_1">lire</p>
+			<p class="p_2">3</p>
+			<p class="p_3">entre</p>
+			<p class="p_4">5</p>
+			<p class="p_5">ces</p>
+			<p class="p_6">6</p>
+			<p class="p_7">lignes</p>
+			<p class="p_8">6</p>
+		</div>
+
+		<!--<p class="p_2">3</p>
+		<p class="p_3">5</p>
+		<p class="p_4">6</p>
+		<p class="p_5">6</p>-->
+	</div>
+
+	<div class="second_hints">
+		<p class="p_1">2 - indice</p>
+		<p class="p_2">qui sait, qui sait où est le code. Eh bien, le mot de passe n'est certainement pas sur la page principale</p>
+		<p class="p_3">)</p>
+		<img class="img_1" src="foto/декор/голубой.png">
+		<img class="img_2" src="foto/декор/жолтый.png">
+	</div>
+
+	<div class="third_hints">
+		<p class="p_1">3 - indice</p>
+		<p class="p_2">faire une opération avec ces nombres</p>
+		<p class="p_3">3 ? 5 ? 6 ? 6 =</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--конец-->
+<footer>
+    <div class="block_img">
+      <img src="foto/logo/logo_2.png">
+    </div>
+
+    <div class="text">
+      <div class="block_menu">
+         <ul>
+          <li><a href="#" class="help">Aider</a></li>
+          <li><a href="#" class="menu1">Menu</a></li>
+          <li><a href="#" class="contacts">Contacts et adresse</a></li>
+          <li><a href="#" class="languages">Langues</a></li>
+         </ul>
+      </div>
+
+         <div class="block_for_help">
+        <ul>
+          <li><a href="https://www.liqpay.ua/ru/checkout/card/i9215574650">Soutenir le projet une fois</a></li>
+          <li><a href="https://www.liqpay.ua/ru/checkout/card/i9215574650">Projet de soutien mensuel</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615640264876280_101898659_46AoC204jpYZdan5he2p">Aide mensuelle</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615640115134966_103027107_JQXiehGFVYQkYlGzhOkc">Produits pour les personnes âgées ponctuel</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615640129544951_106440338_STTbjwcZByPMgtB7ekWN">Produits pour les personnes âgées mensuel</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615639751461470_122359379_OfH8pqtLRS3jd86piA4b">Produit d'hygiène</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScAZ0onNui_KC1iSFcEhxrI2ab4CGLouW9S7wab5WzkmRqS3A/viewform">Faire du bénévolat</a></li>
+        </ul>
+      </div>
+
+         <div class="block_for_menu">
+        <ul>
+          <li><a href="">Principal</a></li>
+          <li><a href="">À propos de nous</a></li>
+          <li><a href="">Galerie</a></li>
+          <li><a href="">Contacts</a></li>
+          <li><a href="contacts_ru.html">Événements</a></li>
+          <li><a href="">Jeu</a></li>
+        </ul>
+         </div>
+
+      <div class="block_for_adress">
+        <p class="adress"><a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%AE%D1%80%D0%B8%D1%8F+%D0%98%D0%BB%D1%8C%D0%B5%D0%BD%D0%BA%D0%BE,+12,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4651506,30.4772799,19z/data=!3m1!4b1!4m5!3m4!1s0x40d4ce7874db2b63:0xd69ace3b27b8c44c!8m2!3d50.4651506!4d30.4778271?hl=ru">Ukraine, Kiev, st. Melnikova, 12 ans</a></p>
+        <p class="amail"><a href="mailto:help@starenki.com.ua">help@starenki.com.ua</a></p>
+
+        <div class="block_with_img_link">
+          <a href="https://www.instagram.com/starenki.help/"><img src="foto/insta/instagram_1.png" class="instagram"></a>
+          <a href="https://www.facebook.com/starenki/"><img src="foto/insta/facebook_1.png" class="facebook"></a>
+          <a href="https://t.me/starenki"><img src="foto/insta/telega_1.png" class="telega"></a>
+
+              <div class="gmail_youtube">
+                <a href="mailto:help@starenki.com.ua"><img src="foto/insta/gamail_1.png" class="gmail"></a>
+                <a href="https://www.youtube.com/channel/UCWxv5fXOMh0UQlPbz18bEXA"><img src="foto/insta/youtube_1.png" class="youtube"></a>
+              </div>
+        </div>
+
+        <div class="block_with_img">
+          <div  class="Uk">
+            <a href=""><img src="foto/flag/Ukraine.png" class="uk"></a>
+          </div>
+          <div class="Ra">
+            <a href="contacts_ru.html"><img src="foto/flag/rassin.png" class="ra"></a>
+          </div>
+          <div class="Usa">
+            <a href=""><img src="foto/flag/usa.jpg" class="usa"></a>
+          </div>
+          <div class="Fr">
+            <a href=""><img src="foto/flag/farance.jpg" class="fr"></a>
+          </div>
+          <div class="Ch">
+            <a href=""><img src="foto/flag/China.jpg" class="ch"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="line_1"></div>
+    <div class="line_2"></div>
+
+     <div class="block_about_cite">
+      <p><strong>Создатели сайта:</strong></p>
+
+      <div class="insta">
+        <a href="https://www.instagram.com/cheater666_programist/">
+          <img src="foto/insta/instagram_black.png">
+        </a>
+      </div>
+
+      <div class="telega_oleksandr">
+        <a href="https://web.telegram.org/#/im?p=@oleksandr">
+          <img src="foto/insta/telega_black.png">
+        </a>
+      </div>
+
+      <div class="telega_Aahzmandiuss">
+        <a href="https://web.telegram.org/#/im?p=@Aahzmandiuss">
+          <img src="foto/insta/telega_black.png">
+        </a>
+      </div>
+
+      <div class="telega_Dana">
+        <a href="https://web.telegram.org/#/im?p=u854258987_4383190150680909201">
+          <img src="foto/insta/telega_black.png">
+        </a>
+      </div>
+     </div>
+
+      <button class="back-to-top-btn" id="back-to-top-btn">
+        <img class="photo" src="foto/стрелочка.png">
+      </button>
+
+   </footer>
+   <script src="game.js"></script>
+</body>
+</html>
