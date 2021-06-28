@@ -99,9 +99,10 @@ nav .content .links {
   display: none;
 }
 
-.content .links .hover:hover {
-  text-decoration: line-through;
-  transition: 10s ease-in-out;
+.content .links .hover:hover a {
+  color: #e91e63;
+  transition: 1.5s ease-in-out;
+  background-color: white;
 }
 
 .menu .menu-icon {
@@ -551,7 +552,6 @@ footer {
   margin-top: 2290px;
   position: absolute;
   width: 1688px;
-  z-index: 666;
 }
 
 footer .block_img img {
@@ -643,7 +643,6 @@ footer .text .block_for_adress .adress {
 }
 
 footer .text .block_for_adress .adress a {
-  text-decoration: none;
   color: white;
   transition: margin-left 1s;
 }
@@ -664,6 +663,7 @@ footer .text .block_for_adress .amail {
 footer .text .block_for_adress .amail a {
   text-decoration: none;
   transition: margin-left 1s;
+  color: white;
 }
 
 footer .text .block_for_adress .amail a:hover {
@@ -771,7 +771,7 @@ footer .line_1 {
   border-left: 70px solid transparent;
   border-right: 70px solid transparent;
   border-top: 160px solid #282323;
-  margin-left: 1548px;
+  margin-left: 1548.4px;
   margin-top: 270px;
 }
 
@@ -837,14 +837,19 @@ footer .block_about_cite .telega_Dana img {
   margin-top: -55px;
 }
 
-footer .arrow {
+footer .back-to-top-btn {
   position: absolute;
   z-index: 0;
+  border: none;
 }
 
-footer .arrow img {
+footer .back-to-top-btn:focus {
+  border: none;
+}
+
+footer .back-to-top-btn img {
   margin-top: -150px;
   height: 80px;
   position: absolute;
-  margin-left: 1600px;
+  margin-left: 1590px;
 }
