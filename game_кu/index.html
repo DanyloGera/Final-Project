@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+	  <div class="menu">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+    <div class="content">
+     <div class="logo"><a href="#"><img class="logph" src="foto/logo/Logo.png"></a></div>
+        <ul class="links">
+          <li class="hover"><a href="#">主要的</a></li>
+          <li class="hover"><a href="#">关于我们</a></li>
+          <li class="hover"><a href="#">画廊</a></li>
+          <li class="hover"><a href="#">联系人</a></li>
+          <li class="hover"><a href="#">活动</a></li>
+          <li class="hover"><a href="#">周四</a></li>
+<!--выпадающий список-->
+          <li>
+            <a href="#" class="desktop-link">Langues</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Українська</a></li>
+              <li><a href="#">Русский</a></li>
+              <li><a href="#">English</a></li>
+              <li><a href="#">Français</a></li>
+              <li><a href="#">中國人</a></li>
+            </ul>
+          </li>
+<!--fini выпадающий список-->
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+	<p class="text_1">玩家好 像任何免费   亲爱的人，父母的尊敬和爱戴给了您2个选择：要么您将遭受苦难 上一本关于农业的教科书，否则您将从事无薪工作   :)</p>
+	<p class="text_2">我们都知道您选择了什么。 而这个选择会影响后续事件的结果。 让我们看看你要去哪里。 您将决定！</p>
+	<p class="text_3">在你开始踏入未知的广阔世界之前，您将通过测试。 破开这该死的门才能飞到空中，有一个四位数的代码。</p>
+	<p class="text_4">使用推论的力量破解*******密码，它位于网站的任何页面上，为此您可以感谢开发人员</p>
+	<p class="text_5">对于特殊的东西，下面有提示</p>
+	<p class="text_6">大法师技能:#创建</p>
+	<p class="text_7">cheater666_programist</p>
+	<p class="text_8">费多连科 A.</p>
+	<p class="text_9">索科洛夫斯基 D.</p>
+	<p class="text_10">皇帝技能：＃游戏进度</p>
+	<p class="text_11">@gera_376</p>
+</header>
+
+
+<div class="calculator">
+	   <div class="header">
+		     <input type="text" placeholder="0,00" class="accont">
+		     <input type="text" placeholder="0,00" class="result">
+	   </div>
+
+	   <main>
+	      <button onclick="input('%')" class="btn">%</button>
+		   <button onclick="reset()" class="btn">C</button>
+			<button onclick="backspace()"  class="btn clean">
+				<img src="foto/img/backspace.png" class="backspace">
+				<img src="foto/img/back2.png" height="25px" class="bak">
+			</button>
+			<button onclick="input('/')" class="btn color">/</button>
+			<button onclick="input('7')" class="btn">7</button>
+			<button onclick="input('8')" class="btn">8</button>
+			<button onclick="input('9')" class="btn">9</button>
+			<button onclick="input('*')" class="btn color">x</button>
+			<button onclick="input('4')" class="btn">4</button>
+			<button onclick="input('5')" class="btn">5</button>
+			<button onclick="input('6')" class="btn">6</button>
+			<button onclick="input('-')" class="btn color" onclick="minus()">-</button>
+			<button onclick="input('1')" class="btn">1</button>
+			<button onclick="input('2')" class="btn">2</button>
+			<button onclick="input('3')" class="btn">3</button>
+			<button onclick="input('+')" class="btn color">+</button>
+			<button onclick="input('.')" class="btn">.</button>
+			<button onclick="input('0')" class="btn">0</button>
+			<button onclick="result()" class="btn-result" onclick="result">=</button>
+		</main>
+
+	   <div class="footer"></div>
+   </div>
+
+
+
+
+
+
+
+
+<div class="hints">
+	<div class="first_hints">
+		<p class="start">1 - 提示</p>
+		<div class="p_0">
+			<p class="p_1">读</p>
+			<p class="p_2">3</p>
+			<p class="p_3">之间</p>
+			<p class="p_4">5</p>
+			<p class="p_5">这些</p>
+			<p class="p_6">6</p>
+			<p class="p_7">线</p>
+			<p class="p_8">6</p>
+		</div>
+
+		<!--<p class="p_2">3</p>
+		<p class="p_3">5</p>
+		<p class="p_4">6</p>
+		<p class="p_5">6</p>-->
+	</div>
+
+	<div class="second_hints">
+		<p class="p_1">2 - 提示</p>
+		<p class="p_2">谁知道，谁知道代码在哪里。 好吧，密码绝对不在主页上</p>
+		<p class="p_3">)</p>
+		<img class="img_1" src="foto/декор/голубой.png">
+		<img class="img_2" src="foto/декор/жолтый.png">
+	</div>
+
+	<div class="third_hints">
+		<p class="p_1">3 - 提示</p>
+		<p class="p_2">用这些数字做一个运算</p>
+		<p class="p_3">3 ? 5 ? 6 ? 6 =</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--конец-->
+<footer>
+    <div class="block_img">
+      <img src="foto/logo/logo_2.png">
+    </div>
+
+    <div class="text">
+      <div class="block_menu">
+         <ul>
+          <li><a href="#" class="help">帮助</a></li>
+          <li><a href="#" class="menu1">菜单</a></li>
+          <li><a href="#" class="contacts">联系方式和地址</a></li>
+          <li><a href="#" class="languages">语言</a></li>
+         </ul>
+      </div>
+
+         <div class="block_for_help">
+        <ul>
+          <li><a href="https://www.liqpay.ua/ru/checkout/card/i9215574650">支持项目一次</a></li>
+          <li><a href="https://www.liqpay.ua/ru/checkout/card/i9215574650">每月支援项目</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615640264876280_101898659_46AoC204jpYZdan5he2p">每月帮助</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615640115134966_103027107_JQXiehGFVYQkYlGzhOkc">老人准时产品</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615640129544951_106440338_STTbjwcZByPMgtB7ekWN">老年人每月产品</a></li>
+          <li><a href="https://www.liqpay.ua/uk/checkout/card/checkout_1615639751461470_122359379_OfH8pqtLRS3jd86piA4b">卫生用品</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScAZ0onNui_KC1iSFcEhxrI2ab4CGLouW9S7wab5WzkmRqS3A/viewform">志愿服务</a></li>
+        </ul>
+      </div>
+
+         <div class="block_for_menu">
+        <ul>
+          <li><a href="">主要的</a></li>
+          <li><a href="">关于我们</a></li>
+          <li><a href="">画廊</a></li>
+          <li><a href="">联系人</a></li>
+          <li><a href="contacts_ru.html">活动</a></li>
+          <li><a href="">周四</a></li>
+        </ul>
+         </div>
+
+      <div class="block_for_adress">
+        <p class="adress"><a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%AE%D1%80%D0%B8%D1%8F+%D0%98%D0%BB%D1%8C%D0%B5%D0%BD%D0%BA%D0%BE,+12,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4651506,30.4772799,19z/data=!3m1!4b1!4m5!3m4!1s0x40d4ce7874db2b63:0xd69ace3b27b8c44c!8m2!3d50.4651506!4d30.4778271?hl=ru">乌克兰，基辅，圣。 梅尔尼科娃，12 岁</a></p>
+        <p class="amail"><a href="mailto:help@starenki.com.ua">help@starenki.com.ua</a></p>
+
+        <div class="block_with_img_link">
+          <a href="https://www.instagram.com/starenki.help/"><img src="foto/insta/instagram_1.png" class="instagram"></a>
+          <a href="https://www.facebook.com/starenki/"><img src="foto/insta/facebook_1.png" class="facebook"></a>
+          <a href="https://t.me/starenki"><img src="foto/insta/telega_1.png" class="telega"></a>
+
+              <div class="gmail_youtube">
+                <a href="mailto:help@starenki.com.ua"><img src="foto/insta/gamail_1.png" class="gmail"></a>
+                <a href="https://www.youtube.com/channel/UCWxv5fXOMh0UQlPbz18bEXA"><img src="foto/insta/youtube_1.png" class="youtube"></a>
+              </div>
+        </div>
+
+        <div class="block_with_img">
+          <div  class="Uk">
+            <a href=""><img src="foto/flag/Ukraine.png" class="uk"></a>
+          </div>
+          <div class="Ra">
+            <a href="contacts_ru.html"><img src="foto/flag/rassin.png" class="ra"></a>
+          </div>
+          <div class="Usa">
+            <a href=""><img src="foto/flag/usa.jpg" class="usa"></a>
+          </div>
+          <div class="Fr">
+            <a href=""><img src="foto/flag/farance.jpg" class="fr"></a>
+          </div>
+          <div class="Ch">
+            <a href=""><img src="foto/flag/China.jpg" class="ch"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="line_1"></div>
+    <div class="line_2"></div>
+
+     <div class="block_about_cite">
+      <p><strong>网站创建者：</strong></p>
+
+      <div class="insta">
+        <a href="https://www.instagram.com/cheater666_programist/">
+          <img src="foto/insta/instagram_black.png">
+        </a>
+      </div>
+
+      <div class="telega_oleksandr">
+        <a href="https://web.telegram.org/#/im?p=@oleksandr">
+          <img src="foto/insta/telega_black.png">
+        </a>
+      </div>
+
+      <div class="telega_Aahzmandiuss">
+        <a href="https://web.telegram.org/#/im?p=@Aahzmandiuss">
+          <img src="foto/insta/telega_black.png">
+        </a>
+      </div>
+
+      <div class="telega_Dana">
+        <a href="https://web.telegram.org/#/im?p=u854258987_4383190150680909201">
+          <img src="foto/insta/telega_black.png">
+        </a>
+      </div>
+     </div>
+
+      <button class="back-to-top-btn" id="back-to-top-btn">
+        <img class="photo" src="foto/стрелочка.png">
+      </button>
+
+   </footer>
+   <script src="game.js"></script>
+</body>
+</html>
