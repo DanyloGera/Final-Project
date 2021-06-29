@@ -2804,7 +2804,6 @@ footer {
   margin-top: 6680px;
   position: absolute;
   width: 1688px;
-  user-select: none;
 }
 footer .block_img img {
   margin-left: 40px;
@@ -3045,15 +3044,15 @@ footer .block_about_cite .telega_Dana img {
   height: 50px;
   margin-top: -55px;
 }
-footer .back-to-top-btn{
+footer .back_to_top_btn{
   position: absolute;
   z-index: 0;
   border: none;
 }
-footer .back-to-top-btn:focus{
+footer .back_to_top_btn:focus{
   border: none;
 }
-footer .back-to-top-btn .photo{
+footer .back_to_top_btn .photo{
   margin-top: -150px;
   height: 80px;
   position: absolute;
