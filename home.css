@@ -1032,6 +1032,9 @@ header .part_third .youtube img {
   font-weight: 300;
   font-style: normal;
 }
+.button {
+  margin-top: -10px;
+}
 .button img {
   width: 1688px;
   height: 500px;
@@ -1116,7 +1119,7 @@ header .part_third .youtube img {
 footer {
   background-color: #282323;
   height: 500px;
-  margin-top: 4700px;
+  margin-top: -10px;
   position: absolute;
   width: 1688px;
 }
